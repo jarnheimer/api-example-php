@@ -10,10 +10,10 @@ function apiCall($requestMethod, $entity, $body = null)
 {
     $curl = curl_init(ENDPOINT . $entity);
     $options = array(
-        'Access-Token: ' . ACCESS_TOKEN . '',
-        'Client-Secret: ' . CLIENT_SECRET . '',
-        'Content-Type: ' . CONTENT_TYPE . '',
-        'Accept: ' . ACCEPTS . ''
+        'Access-Token: ' . ACCESS_TOKEN,
+        'Client-Secret: ' . CLIENT_SECRET,
+        'Content-Type: ' . CONTENT_TYPE,
+        'Accept: ' . ACCEPTS
     );
 
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
